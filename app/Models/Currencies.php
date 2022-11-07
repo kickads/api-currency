@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Currencies extends Model
 {
 	use HasFactory;
-	
+
 	protected $fillable = ['ARS', 'ARS_BLUE', 'EUR', 'BRL', 'GBP', 'MXN', 'COP'];
+    protected $table = "currency";
+    public $timestamps = false;
+
 }
